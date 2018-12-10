@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* index_mobile
+* 모바일 전용 페이지
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+body {
+  background-color: #e9ecef !important;
+}
+
+/* 탭 스와이퍼 */
+.swiper-tab-menu {
+  width: 100%;
+  background-color: #e9ecef;
+}
+
+.swiper-tab-menu .selected {
+  border-bottom-color: #adb5bd !important;
+  color: #495057;
+}
+
+.swiper-tab-menu .swiper-slide {
+  text-align: center;
+  font-size: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  padding: .5rem;
+  font-weight: 700;
+  color: #495057;
+  border-top: 2px solid transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: transparent;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swiper-tab-contents {
+  width: 100%;
+}
+
+.tab-swiper-container {
+  overflow: hidden;
+}
+/*# sourceMappingURL=index_mobile.css.map */

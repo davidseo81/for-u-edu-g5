@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Member
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+
+.content-title-wrap{
+    padding:2rem 0;   margin-bottom:5rem;color:$gray-200;
+    @include media-breakpoint-up(md){
+        padding:4rem 0;
+    }
+    h2{
+        font-family: "Noto Sans KR",sans-serif; font-size: 1.6rem; font-weight: 600; text-align: center;
+        @include media-breakpoint-up(md){
+            text-align: left;
+        }
+    }
+    p{
+        text-align: center; color:$gray-500; font-size:.75rem;
+        @include media-breakpoint-up(md){
+            text-align:left;
+        }
+    }
+    .left-side{
+        text-align:center;
+    }
+}
+
+/* 로그인 */
+.member-login{
+    width: 100%; margin:3rem auto; overflow: hidden;
+    @include media-breakpoint-up(md){
+        width:400px; margin:8rem auto;
+    }
+    .mbskin{
+        padding: .75rem; background-color:$white; border:1px solid $gray-100;
+    }
+    .fa{
+        margin:0 auto;
+    }
+}
+
+/* 비밀번호 확인 */
+.password-wrap{
+    width: 100%;@include clearfix;position: relative;padding: 2rem 0;font-size: .75rem;border: 1px solid rgba(255, 255, 255, .5);background-color: $white;padding: 1rem;margin: 0;
+    .password-confirm{
+        margin: 2rem auto; width:100%;
+        @include media-breakpoint-up(md){
+            margin: 3rem auto; width:420px;
+        }
+    }
+    ::placeholder {
+        font-size: .75rem;
+    }
+    @include media-breakpoint-up(md) {
+        margin-top: 3rem;margin-left: auto;margin-right: auto;font-size: .75rem;@include border-radius(6px);width: 420px;font-size: .75rem;
+    }
+    .page-title {
+        text-align: center;margin: 1.5rem auto;
+    }
+
+    .input-group-addon {
+        span {
+            display: none;
+            @include media-breakpoint-up(md) {
+                display: inline;
+            }
+        }
+    }
+}
+/* 회원가입 */
+.member-wrap {
+    width: 100%; @include clearfix; position: relative; padding: 2rem 0; font-size: .75rem; border: 1px solid rgba(255, 255, 255, .5); box-shadow: 0 0 10px rgba(0, 0, 0, 0); background-color: $white; margin: 0;
+    .register-agree, .register-form, .register-result, .member-confirm{
+        margin: 2rem auto; width:100%;
+        @include media-breakpoint-up(md){
+            margin: 3rem auto;
+        }
+    }
+
+    @include media-breakpoint-up(xs) {
+        padding: 0rem;
+    }
+    @include media-breakpoint-up(sm) {
+        padding: 1rem;
+    }    
+    ::placeholder {
+        font-size: .75rem;
+    }
+    .page-title {
+        display: none; text-align: center; margin: 1.5rem auto;
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+    }
+
+    .terms {
+        font-size: .75rem;
+        line-height: 160%;
+    }
+    section {
+        margin-bottom: 1.5rem;
+        .col-form-label {
+            font-weight: 600; font-size: 1rem;
+            @include media-breakpoint-up(lg) {
+                font-weight: 600; font-size: .85rem;
+            }
+        }
+    }
+    #fregister_private .table {
+        font-size: .75rem;width: 100%;
+    }
+
+    .chkbox {
+        font-size: .75rem;font-weight: 600;color: $gray;
+    }
+    .btn-right {
+        width: 82px;
+    }
+
+}
+
+/* 회원 비번확인 */
+.member-confirm{
+    .input-group-text{
+        width: 90px;
+    }
+}
+
+/* 회원가입 */
+.member-wrap {
+    @include clearfix; margin-bottom: 2rem;
+    .form-group {
+        margin-bottom: .5rem;
+    }
+
+    .join-wrap {
+        h4 {
+            margin: 0; padding: 0; font-size: .95rem; text-align: center; color: $gray; font-weight: 600;
+        }
+    }
+    .mb_address {
+        #reg_mb_addr1, #reg_mb_addr2, #reg_mb_addr3 {
+            border-top: none !important;
+        }
+    }
+    #captcha {
+        text-align: center;
+        #captcha_img {
+            width: auto;
+            @include media-breakpoint-up(xs) {
+                width: 100%;
+            }
+            @include media-breakpoint-up(md) {
+                width: auto;
+            }
+        }
+        label {
+            display: none;
+        }
+
+        audio {
+            width: 100%;
+        }
+    }
+
+}
+
+.member-wrap + hr {
+    display: none;
+}
+
+/* 회원가입완료 */
+#reg_result {
+    line-height: 280%;
+    p {
+        margin-bottom: 2rem;font-size: 1rem;
+    }
+}
+
+/* 로그인 login.skin.php */
+#mb_login {
+    .login-button {
+        width: 100%; height: 48px;
+    }
+    .input-group {
+        margin: .5rem auto;height: 48px;
+    }
+    .input-group-prepend:not(:last-child) .input-group-text {
+        width: 3rem;
+    }
+    .login_id,.login_pw{
+        height:48px;
+    }
+    #login_id, #login_pw{
+        height:48px;
+    }
+    .input-group-text{
+        height:48px;
+    }
+    .form-footer {
+        margin: 1rem auto 0;
+        @include media-breakpoint-only(xs) {
+
+            span {
+                display: none;
+            }
+            font-size: 1rem;
+        }
+    }
+}
+
+/* 폼메일 */
+.mail-wrap {
+    @include clearfix;
+    padding-top: 5rem;
+    .navbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+    .page-title {
+        font-size: 1.3rem;text-align: center;margin: .25rem;
+    }
+    .mail-form-wrap {
+    }
+}
+
+
+/* 쪽지 보내기 */
+.memo-wrap {
+    @include clearfix;
+    padding-top: 5rem;
+    .navbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+    .memo-menu {
+        list-style: none;display: block;margin: 0;padding: 0;
+        li {
+            display: block;
+            float: left;
+            a {
+                display: block;
+                font-size: 1.2rem;
+                padding: .5rem;
+                font-weight: 700;
+                color: $gray-light;;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+            }
+        }
+    }
+    table {
+        th, td {
+            text-align: center;
+            font-size: .75rem;
+            &:first-child {
+                white-space: nowrap;
+            }
+        }
+        td {
+            font-size: .75rem;
+            letter-spacing: -1px;
+        }
+    }
+    .memo-info {
+        @include clearfix;
+        list-style: none;
+        padding: 0 0 .75rem 0;
+        border-bottom: 1px solid $gray-lighter;
+        li {
+            display: block;
+            float: left;
+            font-size: .85rem;
+            img {
+                height: 12px;
+                width: auto;
+            }
+        }
+    }
+    .form-footer {
+        span {
+            display: none;
+            @include media-breakpoint-up(md) {
+                display: inline;
+            }
+        }
+    }
+    .memo-content {
+        line-height: 180%;
+        min-height: 200px;
+    }
+    #captcha_key {
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            width: auto;
+        }
+    }
+}
+
+/* 프로필 */
+.profile-wrap {
+    @include clearfix;
+    padding-top: 5rem;
+    .navbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+    .page-title {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: .25rem;
+    }
+    .profile-memo {
+        p {
+            min-height: 100px;
+        }
+    }
+}
+
+/* 포인트 내역 */
+.point-wrap {
+    @include clearfix;
+    padding-top: 5rem;
+    .navbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+    .page-title {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: .25rem;
+    }
+    .point-table-wrap {
+        font-size: .75rem;
+        th, td {
+            padding: .5rem .25rem;
+            @include media-breakpoint-up(md) {
+                padding: .75rem;
+            }
+        }
+        th {
+            text-align: center;
+        }
+        td {
+            &:nth-child(1), &:nth-child(2) {
+                letter-spacing: -1px;
+            }
+            span {
+                display: none;
+                @include media-breakpoint-up(md) {
+                    display: inline;
+                }
+            }
+        }
+
+    }
+}
+
+
+/* 스크랩 */
+.scrap-wrap {
+    @include clearfix;
+    padding-top: 5rem;
+    .navbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+    .page-title {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: .25rem;
+    }
+    .scrap-table-wrap {
+        .co-1 {
+            white-space: nowrap;
+        }
+        font-size: .75rem;
+        .board {
+            font-weight: 600;
+            color: $blue;
+            a {
+                color: $blue;
+            }
+        }
+        .date {
+            color: $gray-light;
+        }
+    }
+}
+
+.lost-password-wrap {
+    @include clearfix;
+    padding-top: 3.5rem;
+    .navbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+    .page-title {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: .25rem;
+    }
+    .lost-password-form-wrap {
+        .captcha {
+            padding: 1rem 0;
+        }
+    }
+}

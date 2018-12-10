@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Index_1
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+
+/* 설문조사 */
+.simple-title{
+    .poll-title {
+        background-color: #fff !important ; text-align: left !important; border-bottom: 1px dashed #dee2e6;
+    }
+}
+.poll-wrap {
+    .poll {
+        position: relative; font-size: .75rem;
+        .poll-title {
+            line-height: 2rem;font-weight: 600;text-align: center;background-color: $gray-200; font-size: .875rem;
+            a{
+                border-left:5px solid $gray-300; padding-left:.75rem; 
+                &:hover{
+                    border-left:5px solid $primary; 
+                }
+            }
+        }
+
+        h2 {
+            font-size: 1rem;text-align: center;background-color: $gray-lightest;padding: .5rem; 
+        }
+        .poll-header {
+            position: relative;
+            a {
+                display: block;position: absolute;right: 5px;top: 0;
+            }
+        }
+        h3 {
+            font-size: .875rem;padding: .5rem;color: $gray; margin:0; font-weight: 600;
+        }
+        .poll-item {
+            list-style: none; padding:1rem; margin:0;
+            input {
+                display: inline-block;position: relative;top: 2px;
+            }
+        }
+    }
+}
+
+/* 투표결과 */
+.poll-result-wrap {
+    @include clearfix;
+    padding-top: 5rem;
+    ul, li, dl {
+        list-style: none;
+    }
+    .navbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+    .page-title {
+        font-size: 1.3rem;text-align: center;margin: .25rem;
+    }
+    h2 {
+        display: block;padding: .5rem;font-size: .9rem;margin: .5rem 0;background-color: $gray-lightest;
+    }
+    .poll_result_graph {
+        position: relative;margin-right: 5%;height: 5px;background: #eee;margin-bottom: .75rem;
+    }
+    .poll_result_graph span {
+        position: absolute;top: 0;left: 0;height: 5px;background: #565e60;font-size: 0.1em
+    }
+    li {
+        font-size: .85rem;
+        p {
+            margin-bottom: .1rem;
+        }
+    }
+    section {
+        padding: .5rem 1rem;margin-bottom: 2rem;
+    }
+    #poll_result_cmt {
+        article {
+            display: block;position: relative;padding: .5rem;margin-bottom: 1rem;font-size: .85rem;background-color: $gray-lightest;
+        }
+        h1 {
+            font-size: 1rem;font-weight: 600;
+        }
+        .poll-comment-header {
+            margin-bottom: .5rem;color: $gray-light;
+        }
+        .poll-comment {
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);padding: .5rem;
+        }
+        .poll_delete {
+            @include button;padding: .25rem .5rem;font-size: .75rem;font-weight: 400;border-radius: 0;position: absolute;right: 5px;top: 5px;
+        }
+    }
+}

@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* at_introduce_aside.php
+* 왼쪽 블럭은 head_aside.php를 편집하세요.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.intro-wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+.intro-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+@media (min-width: 992px) {
+  .intro-wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.intro-wrap .intro-text-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-wrap .intro-text-wrap .intro-text {
+  font-family: 'Noto Sans KR',sans-serif;
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .intro-wrap .intro-text-wrap .intro-text {
+    padding: 8rem 0;
+  }
+}
+
+.intro-wrap .intro-text-wrap .intro-text h3.header-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #495057;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro-wrap .intro-text-wrap .intro-text h3.header-text {
+    text-align: left;
+  }
+}
+
+.intro-wrap .intro-text-wrap .intro-text h3.header-number {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #dee2e6;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro-wrap .intro-text-wrap .intro-text h3.header-number {
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 1rem;
+  }
+}
+
+.intro-wrap .intro-text-wrap .intro-text h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #6c757d;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .intro-wrap .intro-text-wrap .intro-text h4 {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+}
+
+.intro-wrap .intro-text-wrap .intro-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #adb5bd;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .intro-wrap .intro-text-wrap .intro-text p {
+    text-align: left;
+  }
+}
+
+.intro-wrap .intro-text-wrap .intro-text .text1, .intro-wrap .intro-text-wrap .intro-text .text2, .intro-wrap .intro-text-wrap .intro-text .text3 {
+  margin-bottom: 1rem;
+  visibility: hidden;
+}
+
+@media (min-width: 992px) {
+  .intro-wrap .intro-text-wrap .intro-text .text1, .intro-wrap .intro-text-wrap .intro-text .text2, .intro-wrap .intro-text-wrap .intro-text .text3 {
+    margin-bottom: 0;
+  }
+}
+
+.intro-wrap .ceo-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-wrap .ceo-wrap .ceo-block {
+  visibility: hidden;
+}
+
+.intro-wrap .ceo-wrap .ceo-pic {
+  padding-bottom: .75rem;
+}
+
+.intro-wrap .ceo-wrap .ceo-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-wrap .ceo-wrap .ceo-con .ceo-text p {
+  font-size: .875rem;
+  text-align: justify;
+  color: #495057;
+}
+
+@media (min-width: 768px) {
+  .intro-wrap .ceo-wrap .ceo-con .ceo-text p {
+    font-size: .75rem;
+  }
+}
+
+.intro-wrap .ceo-wrap .ceo-con .ceo-text .ceo-sign {
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.intro-wrap .ceo-wrap .ceo-con .ceo-text .title-text {
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.ceo-bottom-wrap {
+  position: relative;
+  margin: 2rem auto;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  visibility: hidden;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .ceo-bottom-wrap {
+    margin-bottom: 5rem;
+  }
+}
+
+.ceo-bottom-wrap .ceo-bottom-contents {
+  visibility: hidden;
+}
+
+@media (min-width: 992px) {
+  .ceo-bottom-wrap {
+    margin: 5rem auto;
+  }
+}
+
+.ceo-bottom-wrap div.bg-about {
+  background-image: url("../img/bg-introduce2.jpg");
+  min-height: 400px;
+}
+
+.ceo-bottom-wrap .header-number {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ced4da;
+  text-align: center;
+  padding-right: 0;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .ceo-bottom-wrap .header-number {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .ceo-bottom-wrap .header-number {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #ced4da;
+    text-align: right;
+    padding-right: .3rem;
+    margin-top: 0;
+  }
+}
+
+.ceo-bottom-wrap h4 {
+  font-size: 1rem;
+  color: #adb5bd;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .ceo-bottom-wrap h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ceo-bottom-wrap h4 {
+    font-size: 1.4rem;
+  }
+}
+
+.ceo-bottom-wrap p {
+  font-size: .75rem;
+  line-height: 170%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .ceo-bottom-wrap p {
+    font-size: .8rem;
+    line-height: 150%;
+    padding-right: .5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ceo-bottom-wrap p {
+    /*font-size: 1rem; line-height: 190%;*/
+    padding-right: .75rem;
+  }
+}
+
+.company-stats {
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.company-stats .about-items {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .company-stats .about-items {
+    margin-bottom: 0;
+  }
+}
+
+.company-stats .fa {
+  color: #6c757d;
+}
+
+.company-stats p {
+  padding: .5rem 0 0 0;
+  font-weight: 900;
+  font-size: .95rem;
+  color: #343a40;
+  font-family: "Noto Sans KR",sans-serif;
+}
+
+.about-company {
+  position: relative;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-company {
+    margin-top: 5rem;
+  }
+}
+
+.about-company .about-company-parallax {
+  background-image: url(../img/bg-photo@2X.png);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+@media (min-width: 992px) {
+  .about-company .about-company-parallax {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.about-company .about-company-parallax .section-header {
+  padding-bottom: 5rem;
+}
+
+.about-company .about-company-parallax .section-header h2 {
+  color: #343a40;
+  text-align: center;
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-company .about-company-parallax .section-header p {
+  color: #495057;
+  font-size: .9rem;
+}
+
+.about-company .about-company-parallax .about-card {
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-company .about-company-parallax .about-card .card {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-company .about-company-parallax .about-card .card {
+    margin-bottom: 0;
+  }
+}
+
+.about-company .about-company-parallax .about-card .card .card-img-top {
+  height: auto;
+  min-height: auto;
+  max-height: 206px;
+}
+
+@media (min-width: 992px) {
+  .about-company .about-company-parallax .about-card .card .card-img-top {
+    max-height: auto;
+  }
+}
+
+.about-company .about-company-parallax .about-card .card .card-title {
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #495057;
+}
+
+.about-company .about-company-parallax .about-card .card .card-text {
+  font-size: .85rem;
+  color: #6c757d;
+}
+/*# sourceMappingURL=at_introduce_aside.css.map */

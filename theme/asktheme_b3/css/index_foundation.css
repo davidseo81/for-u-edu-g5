@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Index_foundation
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+body {
+  background-color: #e9ecef !important;
+}
+
+/* 슬라이더 높이 설정하기 */
+section#slider {
+  height: 300px;
+}
+
+@media (min-width: 576px) {
+  section#slider {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  section#slider {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  section#slider {
+    height: 500px;
+  }
+}
+
+#contents_wrapper {
+  margin-top: 1rem;
+}
+
+.item-block {
+  margin: 0 0;
+}
+
+@media (min-width: 768px) {
+  .item-block {
+    margin: 1rem 0;
+  }
+}
+
+.border-block {
+  padding: .75rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  section.row {
+    margin: 1rem 0;
+  }
+}
+
+.banner-wrap {
+  margin-top: 1rem;
+}
+
+.banner-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.banner-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.left-banner-sample {
+  padding: 4.5rem 0;
+  background-color: #adb5bd;
+  font-size: .75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #f8f9fa;
+}
+
+.simple-title .rank-title {
+  background-color: #fff !important;
+  text-align: left !important;
+  border-bottom: 1px dashed #dee2e6;
+}
+
+.rank-wrap .rank-title {
+  line-height: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e9ecef;
+  font-size: .875rem;
+}
+
+.rank-wrap .rank-title a {
+  border-left: 5px solid #dee2e6;
+  padding-left: .75rem;
+}
+
+.rank-wrap .rank-title a:hover {
+  border-left: 5px solid #007bff;
+}
+
+.rank-wrap .point-rank-content ul, .rank-wrap .point-rank-content li {
+  list-style: none;
+  display: block;
+  position: relative;
+}
+
+.rank-wrap .point-rank-content .rank-list {
+  margin: 0;
+  padding: 0;
+}
+
+.rank-wrap .point-rank-content .rank-list li {
+  padding: .35rem 4rem .35rem .1rem;
+  font-size: .75rem;
+}
+
+.rank-wrap .point-rank-content .rank-list li a {
+  display: block;
+  font-size: .75rem;
+}
+
+.rank-wrap .point-rank-content .rank-list li .point-number {
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+
+.simple-title .newlist-title {
+  background-color: #fff !important;
+  text-align: left !important;
+  border-bottom: 1px dashed #dee2e6;
+}
+
+.newlist-wrap .newlist-title {
+  line-height: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e9ecef;
+  font-size: .875rem;
+}
+
+.newlist-wrap .newlist-title a {
+  border-left: 5px solid #dee2e6;
+  padding-left: .75rem;
+}
+
+.newlist-wrap .newlist-title a:hover {
+  border-left: 5px solid #007bff;
+}
+
+.newlist-wrap .newlist-content ul, .newlist-wrap .newlist-content li {
+  list-style: none;
+  display: block;
+  position: relative;
+}
+
+.newlist-wrap .newlist-content .newlist-list {
+  margin: 0;
+  padding: 0;
+}
+
+.newlist-wrap .newlist-content .newlist-list li {
+  padding: .35rem 2.875rem .35rem .1rem;
+  font-size: .75rem;
+}
+
+.newlist-wrap .newlist-content .newlist-list li span.item {
+  display: inline-block;
+}
+
+.newlist-wrap .newlist-content .newlist-list li a {
+  display: block;
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+.newlist-wrap .newlist-content .newlist-list li .article-subject {
+  padding-left: .25rem;
+  overflow: hidden;
+}
+
+.newlist-wrap .newlist-content .newlist-list li .article-subject a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.newlist-wrap .newlist-content .newlist-list li .article-date {
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+
+div.card {
+  border: none;
+}
+
+div.card .card-title {
+  font-size: 1.275rem;
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 600;
+}
+
+div.card .card-text {
+  font-size: .75rem;
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+div.card .card-link {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  div.card .card-link {
+    max-height: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .overlap-slider100 {
+    margin-top: -100px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .overlap-slider150 {
+    margin-top: -150px !important;
+  }
+}
+
+.sponsor-info .latest-title {
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.sponsor-info ul {
+  list-style: none;
+  margin: 1rem 1rem .25rem 1rem;
+  padding: 0;
+}
+
+.sponsor-info ul li {
+  display: block;
+  padding: .3rem;
+  font-size: .75rem;
+  color: #495057;
+  text-align: left;
+}
+
+.sponsor-info ul li span {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.sponsor-info p {
+  text-align: center;
+  font-size: .75rem;
+  margin: 0;
+  padding: 0;
+  color: #6c757d;
+}
+
+/* 협력업체 배너 */
+section.banner-wrap {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  section.banner-wrap {
+    margin: 0 auto;
+  }
+}
+
+section.banner-wrap .banner-swiper-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+section.banner-wrap .banner-swiper-container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+section.banner-wrap .banner-swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.banner-wrap .banner-swiper-container .swiper-button-next, section.banner-wrap .banner-swiper-container .swiper-button-prev {
+  width: 25px;
+  height: 20px;
+  top: 55%;
+}
+
+section.banner-wrap .banner-swiper-container .swiper-pagination {
+  bottom: -5px !important;
+}
+/*# sourceMappingURL=index_foundation.css.map */

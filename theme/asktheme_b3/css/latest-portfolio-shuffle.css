@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Portfolio Shuffle Latest skin!
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.category-list-items {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 4rem 0;
+}
+
+.category-list-items label {
+  margin: 0;
+}
+
+.category-list-items .btn {
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  font-size: .85rem;
+}
+
+.category-list-items .btn.active {
+  background-color: #fff !important;
+  border-color: #007bff;
+  color: #007bff !important;
+  border-left: none;
+  border-right: none;
+}
+
+.category-list-items .btn.active.focus, .category-list-items .btn.focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.latest-portfolio-shuffle-wrap .my-shuffle {
+  position: relative;
+  overflow: hidden;
+}
+
+.latest-portfolio-shuffle-wrap .aspect {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.latest-portfolio-shuffle-wrap .aspect__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.latest-portfolio-shuffle-wrap .aspect__inner img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1);
+  -khtml-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.latest-portfolio-shuffle-wrap .aspect__inner img:hover {
+  -webkit-transform: scale(1.2);
+  -khtml-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.latest-portfolio-shuffle-wrap .aspect__inner .ss-subject {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: .25rem;
+  text-align: center;
+  color: #fff;
+  font-size: .8rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: "Noto Sans KR",sans-serif;
+}
+
+@media (min-width: 992px) {
+  .latest-portfolio-shuffle-wrap .aspect__inner .ss-subject {
+    font-size: 1rem;
+    padding: .5rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.latest-portfolio-shuffle-wrap .aspect--16x9 {
+  padding-bottom: 56.25%;
+}
+
+.latest-portfolio-shuffle-wrap .aspect--9x80 {
+  padding-bottom: calc(112.5% + 30px);
+}
+
+.latest-portfolio-shuffle-wrap .aspect--32x9 {
+  padding-bottom: calc(28.125% - 8px);
+}
+
+.latest-portfolio-shuffle-wrap .image-item img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=latest-portfolio-shuffle.css.map */

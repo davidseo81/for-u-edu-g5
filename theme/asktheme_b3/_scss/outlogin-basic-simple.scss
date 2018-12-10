@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Outlogin basic simple
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+
+/* 아웃로그인 basic simple 로그인전 */
+.outlogin-simple-wrap.before-login {
+    .d-flex{
+        .flex-column{
+            width: 100%;
+        }
+        .form-group{
+            margin-bottom:0; padding:.1rem;
+        }
+        .button-wrap{
+            .btn{
+                height:100%; font-family: 'Noto Sans KR',sans-serif; font-weight: 700; padding:0 1rem;
+            }
+        }
+    }
+    .login-menu{
+        font-size: .75rem;
+        a{
+            font-size: .75rem;
+        }
+        .image-check{
+            margin-top:.15rem;
+            label{
+                margin:0;
+            }
+        }
+    }
+    h3 {
+        font-size: 1.1rem; text-align: center; border-bottom: 1px solid $gray-300; padding-bottom: .5rem;
+    }
+    .form-group {
+        input[type=password],input[type=text]{
+            height:2.25rem;
+        }
+        input[type=password]:-ms-input-placeholder{
+            font-size:.75rem; padding-bottom:.25rem;
+        }
+        input[type=text]:-ms-input-placeholder{
+            font-size:.75rem; padding-bottom:.25rem;
+        }
+        label {
+            margin-bottom: .1rem; font-size: .75rem;
+        }
+    }
+    #ol_submit {
+        float: right;
+    }
+    .form-footer {
+        padding: .5rem 0;
+    }
+}
+
+/* 아웃로그인 basick simple 로그인 후 */
+.outlogin-simple-wrap.after-login {
+    background-color: $white; position: relative; 
+    #ol_after {
+        padding: .75rem 1rem;
+        #ol_after_private {
+            margin: 0; padding: 0; list-style: none;
+        }
+    }
+    .btn_admin {
+        position: absolute; right: 0; top: 0;
+    }
+    .login-menu {
+        @include clearfix;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        a {
+            text-align: center; padding: .75rem 0; display: block; font-size: .75rem; text-shadow: 1px 1px 1px rgba(255, 255, 255, .35); border-right: 1px solid rgba(0, 0, 0, .1); @include background-gradient(#efefef, #ddd);
+        }
+        a#ol_after_logout {
+            border-right: 0;
+        }
+    }
+    #ol_after_hd {
+        margin-bottom: 1rem;
+        strong {
+            font-size: .95rem;
+        }
+    }
+    #ol_after_private {
+        a {
+            display: block; font-size: .9rem; text-align: center;
+            i {
+                font-size: 1.5rem; color: $gray-light;
+            }
+            &:hover {
+                i {
+                    color: $gray-dark;
+                }
+            }
+        }
+        .menu-name {
+            font-size: .75rem;
+        }
+        span {
+            font-size: 11px;
+        }
+    }
+}

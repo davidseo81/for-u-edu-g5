@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* 검색
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.content-title-wrap {
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+  color: #e9ecef;
+}
+
+@media (min-width: 768px) {
+  .content-title-wrap {
+    padding: 4rem 0;
+  }
+}
+
+.content-title-wrap h2 {
+  font-family: "Noto Sans KR",sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content-title-wrap h2 {
+    text-align: left;
+  }
+}
+
+.content-title-wrap p {
+  text-align: center;
+  color: #adb5bd;
+  font-size: .75rem;
+}
+
+@media (min-width: 768px) {
+  .content-title-wrap p {
+    text-align: left;
+  }
+}
+
+.content-title-wrap .left-side {
+  text-align: center;
+}
+
+/* 검색 */
+.search-list-wrap .search-board-wrap .search-option {
+  padding: .25rem;
+  text-align: center;
+}
+
+.search-list-wrap h2 {
+  font-size: 1.5rem;
+  margin: .75rem 0;
+}
+
+.search-list-wrap .cnt_cmt {
+  font-weight: 700;
+  color: #007bff;
+  padding-left: .5rem;
+}
+
+.search-list-wrap #sch_res_board {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .search-list-wrap #sch_res_board {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .search-list-wrap #sch_res_board {
+    width: 33%;
+  }
+}
+
+.search-list-wrap .sub-title {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.search-list-wrap .empty-result {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 5rem;
+  color: #636c72;
+}
+
+.search-list-wrap .search-title span {
+  color: #007bff;
+}
+
+.search-list-wrap .search-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .search-list-wrap .search-list {
+    padding: 0 0 0 2rem;
+  }
+}
+
+.search-list-wrap .search-list li {
+  display: block;
+  padding: .25rem;
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px dotted #e9ecef;
+}
+
+.search-list-wrap .search-list li .search-subject {
+  font-size: .875rem;
+  display: block;
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+
+.search-list-wrap .search-list li .search-content {
+  font-size: .75rem;
+  text-align: justify;
+  padding-left: 0;
+  color: #adb5bd;
+}
+
+.search-list-wrap .search-list li .link-new {
+  position: absolute;
+  left: 5px;
+  bottom: .75rem;
+  right: auto;
+  top: auto;
+}
+
+.search-list-wrap .search-list li .link-new span {
+  font-size: .85rem;
+}
+
+.search-list-wrap .search-list li .wr-info {
+  position: absolute;
+  right: 0;
+  bottom: .75rem;
+  letter-spacing: -1px;
+  font-size: .75rem;
+}
+
+@media (min-width: 768px) {
+  .search-list-wrap .search-list li .wr-info {
+    letter-spacing: 0;
+  }
+}
+
+.search-list-wrap .search-list li .wr-info a {
+  font-size: .75rem;
+}
+
+.search-list-wrap .search-list li .wr-info a img {
+  height: 12px;
+  width: auto;
+}
+
+.search-list-wrap .search-list li:last-child {
+  margin-bottom: .5rem;
+}
+
+.search-list-wrap .sch_more {
+  padding: .5rem 0;
+  margin: .5rem 0;
+  text-align: right;
+}
+
+.search-list-wrap .sch_more a {
+  font-size: .75rem;
+}
+/*# sourceMappingURL=search.css.map */

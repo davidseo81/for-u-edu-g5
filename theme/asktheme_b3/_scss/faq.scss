@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* FAQ
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+.content-title-wrap{
+    padding:2rem 0;   margin-bottom:5rem;color:$gray-200;
+    @include media-breakpoint-up(md){
+        padding:4rem 0;
+    }
+    h2{
+        font-family: "Noto Sans KR",sans-serif; font-size: 1.6rem; font-weight: 600; text-align: center;
+        @include media-breakpoint-up(md){
+            text-align: left;
+        }
+    }
+    p{
+        text-align: center; color:$gray-500; font-size:.75rem;
+        @include media-breakpoint-up(md){
+            text-align:left;
+        }
+    }
+    .left-side{
+        text-align:center;
+    }
+}
+/* FAQ LIST */
+.faq-wrap {
+    font-size:.875rem; padding-bottom:2rem;
+    h5{
+        font-size:1rem;
+    }
+    #faq_hhtml, faq_himg, #faq_thtml, #faq_timg {
+        padding: .5rem 0;
+    }
+    position: relative;
+
+    .list-group {
+        margin-bottom: .5rem;
+        .active a {
+            color: $white;
+        }
+    }
+    .card-body {
+        img {
+            max-width: 100%;
+        }
+    }
+}

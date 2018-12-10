@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* MANPAGE
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+.manpage-wrap{
+    padding:1rem;
+    .aside{
+        .list-group{
+            a{
+                font-size: .85rem;
+            }
+            .list-group-item{
+                padding:.5rem .75rem;
+            }
+        }
+    }
+    .figure{
+        margin: .5rem;
+        .figure-img{
+            @include box-shadow(0, 2px, 6px, rgba(0, 0, 0, 0.2));
+        }
+    }
+    .alert{
+        font-size: .8rem;
+    }
+    table{
+        th,td{
+            font-size: .8rem;
+        }
+    }
+}
+.contents-wrap{
+    margin-top: 2rem;
+    @include media-breakpoint-up(md){
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Index_1
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* 설문조사 */
+.simple-title .poll-title {
+  background-color: #fff !important;
+  text-align: left !important;
+  border-bottom: 1px dashed #dee2e6;
+}
+
+.poll-wrap .poll {
+  position: relative;
+  font-size: .75rem;
+}
+
+.poll-wrap .poll .poll-title {
+  line-height: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e9ecef;
+  font-size: .875rem;
+}
+
+.poll-wrap .poll .poll-title a {
+  border-left: 5px solid #dee2e6;
+  padding-left: .75rem;
+}
+
+.poll-wrap .poll .poll-title a:hover {
+  border-left: 5px solid #007bff;
+}
+
+.poll-wrap .poll h2 {
+  font-size: 1rem;
+  text-align: center;
+  background-color: #f7f7f9;
+  padding: .5rem;
+}
+
+.poll-wrap .poll .poll-header {
+  position: relative;
+}
+
+.poll-wrap .poll .poll-header a {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+
+.poll-wrap .poll h3 {
+  font-size: .875rem;
+  padding: .5rem;
+  color: #464a4c;
+  margin: 0;
+  font-weight: 600;
+}
+
+.poll-wrap .poll .poll-item {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.poll-wrap .poll .poll-item input {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+/* 투표결과 */
+.poll-result-wrap {
+  padding-top: 5rem;
+}
+
+.poll-result-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.poll-result-wrap ul, .poll-result-wrap li, .poll-result-wrap dl {
+  list-style: none;
+}
+
+.poll-result-wrap .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.poll-result-wrap .page-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: .25rem;
+}
+
+.poll-result-wrap h2 {
+  display: block;
+  padding: .5rem;
+  font-size: .9rem;
+  margin: .5rem 0;
+  background-color: #f7f7f9;
+}
+
+.poll-result-wrap .poll_result_graph {
+  position: relative;
+  margin-right: 5%;
+  height: 5px;
+  background: #eee;
+  margin-bottom: .75rem;
+}
+
+.poll-result-wrap .poll_result_graph span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: #565e60;
+  font-size: 0.1em;
+}
+
+.poll-result-wrap li {
+  font-size: .85rem;
+}
+
+.poll-result-wrap li p {
+  margin-bottom: .1rem;
+}
+
+.poll-result-wrap section {
+  padding: .5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.poll-result-wrap #poll_result_cmt article {
+  display: block;
+  position: relative;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  font-size: .85rem;
+  background-color: #f7f7f9;
+}
+
+.poll-result-wrap #poll_result_cmt h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.poll-result-wrap #poll_result_cmt .poll-comment-header {
+  margin-bottom: .5rem;
+  color: #636c72;
+}
+
+.poll-result-wrap #poll_result_cmt .poll-comment {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  padding: .5rem;
+}
+
+.poll-result-wrap #poll_result_cmt .poll_delete {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #fff !important;
+  font-weight: bold;
+  border: solid 1px #9a1b27;
+  background: #dc3545;
+  background: -moz-linear-gradient(top, #ee2337, #a71d2a);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee2337', endColorstr='#a71d2a');
+  padding: .25rem .5rem;
+  font-size: .75rem;
+  font-weight: 400;
+  border-radius: 0;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.poll-result-wrap #poll_result_cmt .poll_delete:hover {
+  text-decoration: none;
+  background: #e8293b;
+  background: -moz-linear-gradient(top, #e22f40, #d32535);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e22f40', endColorstr='#d32535');
+}
+
+.poll-result-wrap #poll_result_cmt .poll_delete:active {
+  position: relative;
+  top: 1px;
+  color: #ee2337;
+  background: -moz-linear-gradient(top, #ee2337, #e77681);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee2337', endColorstr='#e77681');
+}
+/*# sourceMappingURL=poll.css.map */

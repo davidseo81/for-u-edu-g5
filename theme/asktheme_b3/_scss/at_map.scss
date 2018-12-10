@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* at_introduce.php
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+/* 오시는길 */
+.map-wrap {
+    margin-top:3rem;
+    .section-header{
+        text-align:center;
+        h2{
+            color: $gray-700; text-align: center;font-family: "Noto Sans KR",sans-serif;font-weight: 900;font-size: 2rem;padding-bottom: 1rem;
+        }
+        p{
+            font-size: .85rem; color:$gray-600;
+        }
+    }
+    .waytocom{
+        th{
+            text-align: right;
+        }
+        td{
+            text-align: left;
+        }
+    }
+    .daum-map {
+        text-align: center; margin : 3rem auto;
+        .root_daum_roughmap {
+            width: 100%;margin: 0 auto;
+            .wrap_map{
+                 height:400px;
+                 @include media-breakpoint-up(md){
+                     height:600px;
+                 }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,625 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Member
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.content-title-wrap {
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+  color: #e9ecef;
+}
+
+@media (min-width: 768px) {
+  .content-title-wrap {
+    padding: 4rem 0;
+  }
+}
+
+.content-title-wrap h2 {
+  font-family: "Noto Sans KR",sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content-title-wrap h2 {
+    text-align: left;
+  }
+}
+
+.content-title-wrap p {
+  text-align: center;
+  color: #adb5bd;
+  font-size: .75rem;
+}
+
+@media (min-width: 768px) {
+  .content-title-wrap p {
+    text-align: left;
+  }
+}
+
+.content-title-wrap .left-side {
+  text-align: center;
+}
+
+/* 로그인 */
+.member-login {
+  width: 100%;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .member-login {
+    width: 400px;
+    margin: 8rem auto;
+  }
+}
+
+.member-login .mbskin {
+  padding: .75rem;
+  background-color: #fff;
+  border: 1px solid #f8f9fa;
+}
+
+.member-login .fa {
+  margin: 0 auto;
+}
+
+/* 비밀번호 확인 */
+.password-wrap {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  font-size: .75rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+.password-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.password-wrap .password-confirm {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .password-wrap .password-confirm {
+    margin: 3rem auto;
+    width: 420px;
+  }
+}
+
+.password-wrap ::-webkit-input-placeholder {
+  font-size: .75rem;
+}
+
+.password-wrap :-ms-input-placeholder {
+  font-size: .75rem;
+}
+
+.password-wrap ::-ms-input-placeholder {
+  font-size: .75rem;
+}
+
+.password-wrap ::placeholder {
+  font-size: .75rem;
+}
+
+@media (min-width: 768px) {
+  .password-wrap {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .75rem;
+    border-radius: 6px;
+    width: 420px;
+    font-size: .75rem;
+  }
+}
+
+.password-wrap .page-title {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.password-wrap .input-group-addon span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .password-wrap .input-group-addon span {
+    display: inline;
+  }
+}
+
+/* 회원가입 */
+.member-wrap {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  font-size: .75rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  background-color: #fff;
+  margin: 0;
+  padding: 0rem;
+}
+
+.member-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.member-wrap .register-agree, .member-wrap .register-form, .member-wrap .register-result, .member-wrap .member-confirm {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .member-wrap .register-agree, .member-wrap .register-form, .member-wrap .register-result, .member-wrap .member-confirm {
+    margin: 3rem auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .member-wrap {
+    padding: 1rem;
+  }
+}
+
+.member-wrap ::-webkit-input-placeholder {
+  font-size: .75rem;
+}
+
+.member-wrap :-ms-input-placeholder {
+  font-size: .75rem;
+}
+
+.member-wrap ::-ms-input-placeholder {
+  font-size: .75rem;
+}
+
+.member-wrap ::placeholder {
+  font-size: .75rem;
+}
+
+.member-wrap .page-title {
+  display: none;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+@media (min-width: 768px) {
+  .member-wrap .page-title {
+    display: block;
+  }
+}
+
+.member-wrap .terms {
+  font-size: .75rem;
+  line-height: 160%;
+}
+
+.member-wrap section {
+  margin-bottom: 1.5rem;
+}
+
+.member-wrap section .col-form-label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .member-wrap section .col-form-label {
+    font-weight: 600;
+    font-size: .85rem;
+  }
+}
+
+.member-wrap #fregister_private .table {
+  font-size: .75rem;
+  width: 100%;
+}
+
+.member-wrap .chkbox {
+  font-size: .75rem;
+  font-weight: 600;
+  color: #464a4c;
+}
+
+.member-wrap .btn-right {
+  width: 82px;
+}
+
+/* 회원 비번확인 */
+.member-confirm .input-group-text {
+  width: 90px;
+}
+
+/* 회원가입 */
+.member-wrap {
+  margin-bottom: 2rem;
+}
+
+.member-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.member-wrap .form-group {
+  margin-bottom: .5rem;
+}
+
+.member-wrap .join-wrap h4 {
+  margin: 0;
+  padding: 0;
+  font-size: .95rem;
+  text-align: center;
+  color: #464a4c;
+  font-weight: 600;
+}
+
+.member-wrap .mb_address #reg_mb_addr1, .member-wrap .mb_address #reg_mb_addr2, .member-wrap .mb_address #reg_mb_addr3 {
+  border-top: none !important;
+}
+
+.member-wrap #captcha {
+  text-align: center;
+}
+
+.member-wrap #captcha #captcha_img {
+  width: auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .member-wrap #captcha #captcha_img {
+    width: auto;
+  }
+}
+
+.member-wrap #captcha label {
+  display: none;
+}
+
+.member-wrap #captcha audio {
+  width: 100%;
+}
+
+.member-wrap + hr {
+  display: none;
+}
+
+/* 회원가입완료 */
+#reg_result {
+  line-height: 280%;
+}
+
+#reg_result p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* 로그인 login.skin.php */
+#mb_login .login-button {
+  width: 100%;
+  height: 48px;
+}
+
+#mb_login .input-group {
+  margin: .5rem auto;
+  height: 48px;
+}
+
+#mb_login .input-group-prepend:not(:last-child) .input-group-text {
+  width: 3rem;
+}
+
+#mb_login .login_id, #mb_login .login_pw {
+  height: 48px;
+}
+
+#mb_login #login_id, #mb_login #login_pw {
+  height: 48px;
+}
+
+#mb_login .input-group-text {
+  height: 48px;
+}
+
+#mb_login .form-footer {
+  margin: 1rem auto 0;
+}
+
+@media (max-width: 319.98px) {
+  #mb_login .form-footer {
+    font-size: 1rem;
+  }
+  #mb_login .form-footer span {
+    display: none;
+  }
+}
+
+/* 폼메일 */
+.mail-wrap {
+  padding-top: 5rem;
+}
+
+.mail-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.mail-wrap .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.mail-wrap .page-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: .25rem;
+}
+
+/* 쪽지 보내기 */
+.memo-wrap {
+  padding-top: 5rem;
+}
+
+.memo-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.memo-wrap .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.memo-wrap .memo-menu {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.memo-wrap .memo-menu li {
+  display: block;
+  float: left;
+}
+
+.memo-wrap .memo-menu li a {
+  display: block;
+  font-size: 1.2rem;
+  padding: .5rem;
+  font-weight: 700;
+  color: #636c72;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.memo-wrap table th, .memo-wrap table td {
+  text-align: center;
+  font-size: .75rem;
+}
+
+.memo-wrap table th:first-child, .memo-wrap table td:first-child {
+  white-space: nowrap;
+}
+
+.memo-wrap table td {
+  font-size: .75rem;
+  letter-spacing: -1px;
+}
+
+.memo-wrap .memo-info {
+  list-style: none;
+  padding: 0 0 .75rem 0;
+  border-bottom: 1px solid #eceeef;
+}
+
+.memo-wrap .memo-info::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.memo-wrap .memo-info li {
+  display: block;
+  float: left;
+  font-size: .85rem;
+}
+
+.memo-wrap .memo-info li img {
+  height: 12px;
+  width: auto;
+}
+
+.memo-wrap .form-footer span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .memo-wrap .form-footer span {
+    display: inline;
+  }
+}
+
+.memo-wrap .memo-content {
+  line-height: 180%;
+  min-height: 200px;
+}
+
+.memo-wrap #captcha_key {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .memo-wrap #captcha_key {
+    width: auto;
+  }
+}
+
+/* 프로필 */
+.profile-wrap {
+  padding-top: 5rem;
+}
+
+.profile-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.profile-wrap .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.profile-wrap .page-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: .25rem;
+}
+
+.profile-wrap .profile-memo p {
+  min-height: 100px;
+}
+
+/* 포인트 내역 */
+.point-wrap {
+  padding-top: 5rem;
+}
+
+.point-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.point-wrap .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.point-wrap .page-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: .25rem;
+}
+
+.point-wrap .point-table-wrap {
+  font-size: .75rem;
+}
+
+.point-wrap .point-table-wrap th, .point-wrap .point-table-wrap td {
+  padding: .5rem .25rem;
+}
+
+@media (min-width: 768px) {
+  .point-wrap .point-table-wrap th, .point-wrap .point-table-wrap td {
+    padding: .75rem;
+  }
+}
+
+.point-wrap .point-table-wrap th {
+  text-align: center;
+}
+
+.point-wrap .point-table-wrap td:nth-child(1), .point-wrap .point-table-wrap td:nth-child(2) {
+  letter-spacing: -1px;
+}
+
+.point-wrap .point-table-wrap td span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .point-wrap .point-table-wrap td span {
+    display: inline;
+  }
+}
+
+/* 스크랩 */
+.scrap-wrap {
+  padding-top: 5rem;
+}
+
+.scrap-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.scrap-wrap .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.scrap-wrap .page-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: .25rem;
+}
+
+.scrap-wrap .scrap-table-wrap {
+  font-size: .75rem;
+}
+
+.scrap-wrap .scrap-table-wrap .co-1 {
+  white-space: nowrap;
+}
+
+.scrap-wrap .scrap-table-wrap .board {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.scrap-wrap .scrap-table-wrap .board a {
+  color: #007bff;
+}
+
+.scrap-wrap .scrap-table-wrap .date {
+  color: #636c72;
+}
+
+.lost-password-wrap {
+  padding-top: 3.5rem;
+}
+
+.lost-password-wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.lost-password-wrap .navbar {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.lost-password-wrap .page-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: .25rem;
+}
+
+.lost-password-wrap .lost-password-form-wrap .captcha {
+  padding: 1rem 0;
+}
+/*# sourceMappingURL=member.css.map */

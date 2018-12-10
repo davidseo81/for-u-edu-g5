@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* New - 새글
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+
+.content-title-wrap{
+    padding:2rem 0;   margin-bottom:5rem;color:$gray-200;
+    @include media-breakpoint-up(md){
+        padding:4rem 0;
+    }
+    h2{
+        font-family: "Noto Sans KR",sans-serif; font-size: 1.6rem; font-weight: 600; text-align: center;
+        @include media-breakpoint-up(md){
+            text-align: left;
+        }
+    }
+    p{
+        text-align: center; color:$gray-500; font-size:.75rem;
+        @include media-breakpoint-up(md){
+            text-align:left;
+        }
+    }
+    .left-side{
+        text-align:center;
+    }
+}
+
+/* 새글 */
+.new-wrap {
+    margin-bottom: 1rem;z-index: 1;margin: 2rem 0;font-size:.75rem;
+    a{
+        font-size:.75rem;
+    }    
+    .board-table-wrap {
+        th {
+            text-align: center;
+        }
+        td:not(:nth-child(3)) {
+            text-align: center;
+        }
+        td, th {
+            &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+                white-space: nowrap;
+            }
+            &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+                display: none;
+                @include media-breakpoint-up(md) {
+                    display: table-cell;
+                }
+            }
+            .sm-show {
+                display: block;font-size: .75rem;color: $gray; text-align: right; margin-top:.5rem;
+                @include media-breakpoint-up(md) {
+                    display: none;
+                }
+                .badge {
+                    display: none;
+                }
+                img {
+                    height: 12px;width: auto;
+                }
+            }
+        }
+    }
+}

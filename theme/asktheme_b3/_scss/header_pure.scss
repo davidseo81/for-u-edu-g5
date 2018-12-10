@@ -1,0 +1,598 @@
+@charset "utf-8";
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Header_pure
+* 흰배경 불투명
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+
+/* 
+  Large Device - PC 
+*/
+@include media-breakpoint-up(lg) {
+  .mobile-menu-trigger {
+    display: none;
+  }
+
+  #logo {
+    float: left;
+  }
+
+  .standard-logo-black {
+    display: none;
+  }
+
+  .standard-logo {
+    display: block;
+  }
+}
+
+/* Header */
+.transparent-header {
+  background: transparent;
+}
+
+.header.header_pure.slide-up {
+  top: -140px;
+  @include transition("0.4s");
+  @include background-opacity($black, 1);
+}
+
+/* 메뉴 배경색 지정 */
+.header.header_pure.add-background {
+  @include transition("0.6s");
+  @include background-opacity($gray-800, 1);
+}
+
+.header.header_pure.slide-up-opacity {
+  @include background-opacity($gray-900, 0.9);
+  @include media-breakpoint-up(lg) {
+    @include background-opacity($gray-900, 0.8);
+  }
+}
+
+.header_pure.header-right-slide {
+  transform: translateX(-180px);
+}
+
+.header_pure.header-left-slide {
+  transform: translateX(260px);
+}
+
+/* Header Menu */
+.header.header_pure {
+  position: relative;
+  @include transition("0.3s");
+  @include clearfix;
+  z-index: 1030;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 70px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+  }
+
+  #basic-header-wrap {
+    @include clearfix;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    width: 100%;
+    background-color: $white;
+    @include box-shadow(2px, 2px, 8px, rgba(0, 0, 0, 0.1));
+
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    /* 탑 회원 메뉴 */
+    .pc-sub-menu {
+      overflow: hidden;
+      line-height: 1.5rem;
+      display: none;
+      background: rgba(255, 255, 255, 1);
+      max-height: 49px;
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+
+      .pc-sub-wrap {
+        padding-bottom: 0.75rem;
+      }
+
+      .pc-sub-nav {
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+
+        .ps-item {
+          display: inline-block;
+
+          a {
+            display: block;
+            color: $gray-600;
+            font-size: 0.85rem;
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 400;
+            padding: 0 0.5rem;
+            &:hover {
+              color: $gray-900;
+            }
+          }
+
+          &:last-child {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+
+    .pc-sub-menu.slideup_close {
+      max-height: 0;
+    }
+
+    .container.pc-main-menu {
+      height: 70px;
+      /* 주메뉴 */
+      @include media-breakpoint-up(lg) {
+        position: relative;
+      }
+      @include clearfix;
+      #logo {
+        /* 사이트로고 */
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 55px;
+        padding: 8px 0 15px 0;
+        @include media-breakpoint-up(lg) {
+          padding: 0 0 15px 0;
+          position: absolute;
+          bottom: 0;
+          margin: auto;
+          width: auto;
+          height: auto;
+        }
+
+        .site-logo {
+          /* PC */
+          display: block;
+          height: 55px;
+          width: 100px;
+          @include media-breakpoint-up(lg) {
+            height: auto;
+            width: auto;
+          }
+          img {
+            height: 55px;
+            width: 100px;
+            @include media-breakpoint-up(lg) {
+              height: 70px;
+              width: 127px;
+              @include transition(all 0.3s ease);
+            }
+          }
+        }
+
+        .site-logo-mobile {
+          display: block;
+
+          @include media-breakpoint-up(lg) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    #basic-primary-menu {
+      /* 상단 메인메뉴 PC - 모바일에서는 슘겨지니 모바일 PC 구분하지 않아도 된다. */
+      display: none;
+      margin: 0;
+      padding: 0;
+
+      @include clearfix;
+
+      position: relative;
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+        float: right;
+        display: block;
+      }
+
+      .basic-main-menu {
+        @include clearfix;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .basic-nav-parent {
+          float: left;
+          display: block;
+          position: relative;
+          z-index: 10;
+          border-top: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          &:hover {
+            /* 마우스 hover 시 border color */
+            border-top: 4px solid rgba(77, 88, 204, 0.5);
+
+            .sub-menu {
+              display: block;
+            }
+          }
+
+          .parent_menu {
+            transition: 0.3s;
+
+            /* A tag */
+            font-family: "Noto Sans KR", sans-serif;
+            min-width: 70px;
+            text-align: center;
+            display: block;
+            line-height: 62px;
+            padding: 0 15px;
+            font-size: 1rem;
+            color: $gray-900;
+            font-weight: 600;
+
+            //@include text-shadow(1px, 1px, 0, rgba(0, 0, 0, 0.6));
+            @include media-breakpoint-up(lg) {
+              color: $gray-900;
+            }
+
+            &:hover {
+              color: $primary;
+            }
+          }
+
+          .parent_menu.icontype {
+            /*아이콘형식메뉴*/
+            min-width: 0;
+          }
+
+          .sub-menu {
+            /* 드롭다운 하위 메뉴 */
+            @include transition(0.5s);
+            visibility: hidden;
+            opacity: 0;
+            display: block;
+
+            @include background-opacity($gray-100, 0.95);
+
+            border: 1px solid rgba(239, 239, 239, 1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            margin: 4px 0 0 0;
+            padding: 0;
+            position: absolute;
+            z-index: 20;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            min-width: 170px;
+
+            li {
+              display: block;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              padding: 0.2rem 0;
+              &:last-child {
+                border-bottom: none;
+              }
+
+              a {
+                font-family: "Noto Sans KR", sans-serif;
+                transition: 0.3s;
+                line-height: 2rem;
+                font-weight: 400;
+                margin: 0 10px;
+                font-size: 0.875rem;
+                color: $gray-900;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+                display: block;
+
+                &:hover {
+                  padding-left: 8px;
+                  color: $primary;
+                }
+              }
+
+              &:last-child {
+                a {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            ul.sub-menu {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          .site-search {
+            /* 검색 */
+            left: auto;
+            right: -50px;
+            width: auto;
+            line-height: 40px;
+            padding: 0.75rem;
+            min-height: 42px;
+            overflow: hidden;
+
+            .search {
+              .search-wrapper {
+                @include background-opacity(#fff, 1);
+
+                @include clearfix;
+
+                margin-top: 0;
+                height: 42px;
+
+                .search-field {
+                  border: none;
+                  width: 150px;
+                  display: block;
+
+                  @include background-opacity($gray-lightest, 0.1);
+
+                  padding-left: 0.5rem;
+                }
+
+                .search-btn {
+                  border: none;
+                  width: 30px;
+                  display: block;
+
+                  @include background-opacity(#fff, 0);
+
+                  margin: 0;
+                  padding: 0;
+                }
+              }
+            }
+          }
+
+          /* end site-search */
+        }
+      }
+    }
+  }
+
+  .mobile-member-trigger {
+    /* 모바일 우측 메뉴 버튼 */
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -20px;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+
+    button {
+      font-size: 1.5rem;
+      display: block;
+      color: $gray-700;
+      background: transparent;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .mobile-menu-trigger {
+    /* 모바일 메뉴 버튼 */
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 15px;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+
+    button {
+      font-size: 1.5rem;
+      display: block;
+      color: $gray-700;
+      background: transparent;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+/* Top fixed */
+body.sticky_header {
+  @include media-breakpoint-up(lg) {
+    margin-top: 70px+44px;
+  }
+
+  div.basic-primary-header {
+    background-color: $white !important;
+    margin-top: 0 !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    @include media-breakpoint-up(lg) {
+      margin-top: -44px !important;
+    }
+
+    a.site-logo {
+      img.logo {
+        width: 100px !important;
+        height: 55px !important;
+        @include transition(all 0.3s ease);
+        @include media-breakpoint-up(lg) {
+          width: 73px !important;
+          height: 40px !important;
+        }
+      }
+    }
+  }
+}
+
+.slider.business_basic {
+  /* 슬라이더 배경으로 당기기 */
+  top: 0;
+
+  @include media-breakpoint-up("lg") {
+    top: -100px;
+  }
+}
+
+.left-sub-menu-wrap {
+  /* 하위페이지 왼쪽 메뉴 */
+  position: relative;
+  display: none;
+  padding-top: 1.5rem;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  .content-title {
+    text-align: center;
+    border-bottom: 1px solid $gray-200;
+
+    h2 {
+      font-size: 1.45rem;
+    }
+
+    p {
+      color: $gray-500;
+      font-size: 0.75rem;
+    }
+  }
+
+  .sub-menu-wrap {
+    /* lg 왼쪽 메뉴 */
+    @include clearfix;
+
+    margin-right: -29px;
+    z-index: 5;
+    position: relative;
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    .side-left-menu {
+      display: block;
+      margin-top: 3rem;
+      position: relative;
+      padding: 0;
+
+      li {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-right: 2rem;
+        margin-right: 2rem;
+        position: relative;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        top: 1px;
+        margin-top: -1px;
+        padding-top: 1px;
+        border-color: $gray-200;
+
+        a {
+          &::before {
+            content: "\2219";
+            position: absolute;
+            top: 8px;
+            left: 0.5rem;
+          }
+
+          display: block;
+          text-align: left;
+          font-size: 1rem;
+          padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+
+      li.active {
+        /* 현재 왼쪽 메뉴*/
+        background-color: $white;
+        margin-right: -1px;
+        padding-right: 4rem;
+
+        a {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.lg-right-menu {
+  padding-right: 30px;
+  position: relative;
+  z-index: 2;
+  min-height: 520px;
+}
+
+.left-side-bg {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  z-index: -1;
+}
+
+.shadow-top {
+  background: url("images/sd-03.png") no-repeat top right transparent;
+  top: 0px;
+  height: 261px;
+}
+
+.shadow-center {
+  background: url("images/sd-02.png") repeat-y top right transparent;
+  top: 260px;
+  bottom: 260px;
+  left: auto;
+  right: 0;
+}
+
+.shadow-bottom {
+  background: url("images/sd-01.png") no-repeat top right transparent;
+  bottom: 0px;
+  height: 260px;
+}

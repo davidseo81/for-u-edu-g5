@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Outlogin basic simple
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* 아웃로그인 basic simple 로그인전 */
+.outlogin-simple-wrap.before-login .d-flex .flex-column {
+  width: 100%;
+}
+
+.outlogin-simple-wrap.before-login .d-flex .form-group {
+  margin-bottom: 0;
+  padding: .1rem;
+}
+
+.outlogin-simple-wrap.before-login .d-flex .button-wrap .btn {
+  height: 100%;
+  font-family: 'Noto Sans KR',sans-serif;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+.outlogin-simple-wrap.before-login .login-menu {
+  font-size: .75rem;
+}
+
+.outlogin-simple-wrap.before-login .login-menu a {
+  font-size: .75rem;
+}
+
+.outlogin-simple-wrap.before-login .login-menu .image-check {
+  margin-top: .15rem;
+}
+
+.outlogin-simple-wrap.before-login .login-menu .image-check label {
+  margin: 0;
+}
+
+.outlogin-simple-wrap.before-login h3 {
+  font-size: 1.1rem;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: .5rem;
+}
+
+.outlogin-simple-wrap.before-login .form-group input[type=password], .outlogin-simple-wrap.before-login .form-group input[type=text] {
+  height: 2.25rem;
+}
+
+.outlogin-simple-wrap.before-login .form-group input[type=password]:-ms-input-placeholder {
+  font-size: .75rem;
+  padding-bottom: .25rem;
+}
+
+.outlogin-simple-wrap.before-login .form-group input[type=text]:-ms-input-placeholder {
+  font-size: .75rem;
+  padding-bottom: .25rem;
+}
+
+.outlogin-simple-wrap.before-login .form-group label {
+  margin-bottom: .1rem;
+  font-size: .75rem;
+}
+
+.outlogin-simple-wrap.before-login #ol_submit {
+  float: right;
+}
+
+.outlogin-simple-wrap.before-login .form-footer {
+  padding: .5rem 0;
+}
+
+/* 아웃로그인 basick simple 로그인 후 */
+.outlogin-simple-wrap.after-login {
+  background-color: #fff;
+  position: relative;
+}
+
+.outlogin-simple-wrap.after-login #ol_after {
+  padding: .75rem 1rem;
+}
+
+.outlogin-simple-wrap.after-login #ol_after #ol_after_private {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.outlogin-simple-wrap.after-login .btn_admin {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.outlogin-simple-wrap.after-login .login-menu {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.outlogin-simple-wrap.after-login .login-menu::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.outlogin-simple-wrap.after-login .login-menu a {
+  text-align: center;
+  padding: .75rem 0;
+  display: block;
+  font-size: .75rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.35);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #efefef;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ddd));
+  background-image: linear-gradient(top, #efefef, #ddd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#efefef', endColorStr='#ddd');
+}
+
+.outlogin-simple-wrap.after-login .login-menu a#ol_after_logout {
+  border-right: 0;
+}
+
+.outlogin-simple-wrap.after-login #ol_after_hd {
+  margin-bottom: 1rem;
+}
+
+.outlogin-simple-wrap.after-login #ol_after_hd strong {
+  font-size: .95rem;
+}
+
+.outlogin-simple-wrap.after-login #ol_after_private a {
+  display: block;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.outlogin-simple-wrap.after-login #ol_after_private a i {
+  font-size: 1.5rem;
+  color: #636c72;
+}
+
+.outlogin-simple-wrap.after-login #ol_after_private a:hover i {
+  color: #292b2c;
+}
+
+.outlogin-simple-wrap.after-login #ol_after_private .menu-name {
+  font-size: .75rem;
+}
+
+.outlogin-simple-wrap.after-login #ol_after_private span {
+  font-size: 11px;
+}
+/*# sourceMappingURL=outlogin-basic-simple.css.map */

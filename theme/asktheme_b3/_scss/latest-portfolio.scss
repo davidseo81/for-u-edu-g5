@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Portfolio Latest skin!
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+.latest-portfolio-wrap{
+    .portfolio-image-wrap{
+        overflow: hidden;
+        .pf-link{
+            display: block;
+        }
+        .portfolio-thumb{
+            width:100%; height: auto;
+            @include transform('scaleY(1)');
+            @include transition('all 0.3s ease-in-out');
+        }
+        .pf-mask{
+            position: absolute;overflow: hidden;bottom: 0;left: 0; width:100%; height:auto;
+            background-color: rgba(0, 0, 0, 0.1);
+            @include transition('all 0.3s linear');
+            @include opacity(1);
+            .pf-subject{
+                color: #333;background: transparent;margin: 0;text-align: center; padding: .35rem;
+                @include transform('scale(1)');
+                @include transition('all 0.3s linear');
+                @include opacity(1);
+                a{
+                    font-family: 'Noto Sans KR',sans-serif;color:$white; font-size: .85rem; font-weight: 400; display: block; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;
+                    @include text-shadow(1px, 1px, 1px,  rgba(0,0,0,.5));
+                }
+            }
+            .pf-date{
+                color:$gray-200; text-align: center; padding:.15rem; margin-bottom:0; font-size:.75rem;
+                @include transform('scale(1)');
+                @include transition('all 0.3s linear');
+                @include opacity(1);
+                @include text-shadow(1px, 1px, 1px,  rgba(0,0,0,.5));
+
+            }
+        }
+        /* Mouse Hover effect - laptop */
+        @include media-breakpoint-up(lg){
+            .pf-mask{
+                position: absolute;overflow: hidden;top: 0;left: 0; width:100%; height:100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                @include transition('all 0.3s linear');
+                @include opacity(0);
+                .pf-subject{
+                    border-bottom: .15rem solid rgba(0, 0, 0, .35);color: #333;background: transparent;margin: 20px 40px 0px 40px;
+                    @include transform('scale(0)');
+                    @include transition('all 0.3s linear');
+                    @include opacity(0);
+                    a{
+                        color:$white; font-size: 1.6rem; font-weight: 700; display: block; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;
+                        @include text-shadow(2px, 2px, 3px,  rgba(0,0,0,.9));
+                    }
+                }
+                .pf-date{
+                    color:$gray-200; text-align: center; padding:.5rem;
+                    @include transform('scale(0)');
+                    @include transition('all 0.3s linear');
+                    @include opacity(0);
+
+                }
+            }
+            &:hover{
+                .portfolio-thumb{
+                    width:100%; height: auto;
+                    @include transform('scale(2)');
+                    @include transition('all 0.3s ease-in-out');
+                    @include opacity(.5);
+                }
+                .pf-mask{
+                    @include opacity(1);
+                    .pf-subject{
+                        text-align: center; padding:4rem 0 1rem 0;
+                        border-bottom: .15rem solid rgba(0, 0, 0, .35);color: #333;background: transparent;margin: 20px 40px 0px 40px;
+                        @include transform('scale(1)');
+                        @include opacity(1);
+                        a{
+                            color:$white; font-size: 1.6rem; font-weight: 700; display: block; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;
+                            @include text-shadow(2px, 2px, 3px,  rgba(0,0,0,.9));
+                        }
+                    }
+                    .pf-date{
+                        color:$gray-200; 
+                        @include text-shadow(1px, 1px, 2px,  rgba(0,0,0,.9));
+                        @include transform('scale(1)');
+                        @include opacity(1);
+                    }
+                }
+            }
+        }
+
+    }
+}

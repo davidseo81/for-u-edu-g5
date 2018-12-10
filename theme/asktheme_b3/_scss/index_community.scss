@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Index_community
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+body{
+    background-color: $gray-200 !important;
+}
+/* 슬라이더 높이 설정하기 */
+section#slider {
+    height: 300px;
+    @include media-breakpoint-up(sm) {
+        height: 350px;
+    }
+    @include media-breakpoint-up(md) {
+        height: 400px;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 500px;
+    }
+}
+
+#contents_wrapper{
+    margin-top:1rem;
+}
+.item-block{
+    margin: 0 0;
+    @include media-breakpoint-up(md){
+        margin: 1rem 0;
+    }
+}
+.border-block{
+     padding:.75rem;   background-color: $white;box-shadow: 0 0 2px rgba(0,0,0,.1);
+}
+
+section.row{
+    @include media-breakpoint-up(md){
+        margin: 1rem 0;
+    }
+}
+.banner-wrap{
+    @include clearfix; margin-top:1rem; margin-bottom:1rem;
+    @include media-breakpoint-up(lg){
+        margin-bottom:0;
+    }
+    img{
+        width:100%; height:auto;   
+    }
+}
+.left-banner-sample{
+    padding:4.5rem 0; background-color: $gray-500; font-size:.75rem; font-weight: 600; text-align:center; color:$gray-100;
+}
+//포인트랭킹
+.simple-title{
+    .rank-title {
+        background-color: #fff !important ; text-align: left !important; border-bottom: 1px dashed #dee2e6;
+    }
+}
+.rank-wrap {
+    .rank-title {
+        line-height: 2rem;font-weight: 600;text-align: center;background-color: $gray-200; font-size: .875rem;
+        a{
+            border-left:5px solid $gray-300; padding-left:.75rem; 
+            &:hover{
+                border-left:5px solid $primary; 
+            }
+        }
+    }
+    .point-rank-content{
+        ul,li{
+            list-style: none;display: block; position:relative;
+        }
+        .rank-list{
+            margin:0; padding:0;
+            li{
+                padding:.35rem 4rem .35rem .1rem;font-size:.75rem;
+                a{
+                    display: block;font-size:.75rem;
+                }
+                .point-number{
+                    position:absolute; right:0; top:4px;
+                }
+            }
+        }
+    }
+}
+
+
+.simple-title{
+    .newlist-title {
+        background-color: #fff !important ; text-align: left !important; border-bottom: 1px dashed #dee2e6;
+    }
+}
+
+.newlist-wrap {
+    .newlist-title {
+        line-height: 2rem;font-weight: 600;text-align: center;background-color: $gray-200; font-size: .875rem;
+        a{
+            border-left:5px solid $gray-300; padding-left:.75rem; 
+            &:hover{
+                border-left:5px solid $primary; 
+            }
+        }
+    }
+    .newlist-content{
+        ul,li{
+            list-style: none;display: block; position:relative;
+        }
+        .newlist-list{
+            margin:0; padding:0; 
+            li{
+                padding:.35rem 2.875rem .35rem .1rem;font-size:.75rem;
+                span.item{
+                    display: inline-block;
+                }
+                a{
+
+                    display: block;font-size:.75rem; font-weight: 400;
+                }
+                .article-subject{
+                    padding-left:.25rem;overflow: hidden;
+                    a{
+                        text-overflow: ellipsis;white-space: nowrap;word-wrap: normal; overflow: hidden;
+                    }
+                }
+                .article-date{
+                    position:absolute; right:0; top:4px;
+                }
+            }
+        }
+    }
+}

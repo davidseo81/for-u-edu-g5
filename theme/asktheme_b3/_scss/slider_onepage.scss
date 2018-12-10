@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Slider - Fade
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+
+/* * * * * * * * * * * * * * * 슬라이더  * * * * * * * * * * * * * * * * */
+#slider {
+    width: 100%; height: 300px; position: relative; background-color: $gray-dark; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
+    .container {
+        margin-left: 0 !important; margin-right: 0 !important;
+    }
+    @include media-breakpoint-up(sm) {
+        height: 400px;
+    }
+    @include media-breakpoint-up(md) {
+        height: 500px;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 100%; /* Laptop Slider height */
+    }
+    .ani-text {
+        //display: none;
+        opacity: 0
+    }
+    .swiper-button-next{
+
+    }
+    .swiper-button-prev{
+
+    }
+    .ani-text-subtext{
+        font-weight: 600;
+    }
+}
+
+.slider .slider-inner {
+    width: 100%;height: 100%;left: 0;top: 0;
+}
+
+.slider, .slider-inner, .slider-catpion {
+    will-change: transform; -webkit-transform: translate3d(0, 0, 0);-webkit-transition: transform 0s linear;-webkit-backface-visibility: hidden;
+}
+
+.swiper-container {
+    width: 100%;height: 100%;
+}
+
+.swiper-slide {
+    text-align: center; font-size: 18px; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center;
+    -webkit-align-items: center; align-items: center; margin: 0; background-position: center center; background-repeat: no-repeat; background-size: cover; cursor: move; position: relative;
+    //background-position-x: 0; background-position-y:0;
+    @include media-breakpoint-up(lg) {
+        //background-position-x: -25px; background-position-y: -50px; background-size: calc(100% + 50px); position: fixed;
+    }
+    /* 슬라이더 검은색 글자 사용 */
+    .slider-catpion.black-font {
+        h2 {
+            color: $gray-900 !important; @include text-shadow(1px, 1px, 1px, rgba(255, 255, 255, .35));
+        }
+        p {
+            color: $gray-900 !important; @include text-shadow(1px, 1px, 1px, rgba(255, 255, 255, .35));
+        }
+        .slide-more-btn{
+            border: 2px solid $black; color:$gray-800; 
+            &:hover{
+                color:$gray-100; background-color:$black;
+            }
+        }
+    }
+
+    .slider-catpion {
+        h2 {
+            /* 슬라이드 큰글자 */
+            font-family: "Noto Sans KR",sans-serif; color: $gray-100; @include text-shadow(1px, 1px, 1px, rgba(0, 0, 0, .35)); font-weight: 900; line-height: 1.5; letter-spacing: 2px; padding: 0 2rem; font-size: 1.8rem; margin-bottom: 0;
+            @include media-breakpoint-up(sm) {
+                font-size: 2.5rem; margin-bottom: 1.5rem;
+            }
+            @include media-breakpoint-up(md) {
+                font-size: 3rem; margin-bottom: 2rem;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 3.5rem; margin-bottom: 0;
+            }
+        }
+        h2.bigtext{
+            @include media-breakpoint-up(lg) {
+                font-size: 6rem; margin-bottom: 0; line-height: 120%;
+            }
+        }
+        p {
+            display: none; font-size: 1rem; margin-bottom: 1rem; color: $gray-100; @include text-shadow(1px, 1px, 1px, rgba(0, 0, 0, .35)); padding: 0 2rem;
+            @include media-breakpoint-up(sm) {
+                font-size: 1.1rem; padding: 0 1.5rem; display: block;
+            }
+            @include media-breakpoint-up(md) {
+                font-size: 1.2rem; padding: 0 2rem; display: block;
+            }
+        }
+        .slide-more-btn{
+            font-family: "Noto Sans KR",sans-serif;
+            display: inline-block; padding:.4rem; border: 2px solid $white; font-size: .8rem; color:$gray-100; font-weight: bold; border-radius: 6px;
+            transition: .3s;
+            &:hover{
+                color:$gray-800; background-color:$white;
+            }
+        }
+    }
+    .movie-wrap {
+        position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0;
+    }
+}

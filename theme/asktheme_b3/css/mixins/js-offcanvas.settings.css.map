@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "js-offcanvas.settings.css",
+	"sources": [
+		"../../_scss/mixins/js-offcanvas.settings.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

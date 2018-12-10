@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* Index_1
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+#info-trigger .info-block {
+  visibility: hidden;
+}
+
+.intro-section {
+  visibility: hidden;
+  background-color: #f2f3f4;
+  background-image: none;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .intro-section {
+    background-image: url("../img/intro-desk.jpg");
+    padding: 5rem 0;
+  }
+}
+
+.intro-section h3 {
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 700;
+  color: #343a40;
+  font-size: 1.25rem;
+}
+
+.intro-section h4 {
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 600;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.intro-section h5 {
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 600;
+  color: #ced4da;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-right: .5rem;
+}
+
+.intro-section p {
+  font-size: .8rem;
+  color: #6c757d;
+  text-align: justify;
+}
+
+.intro-section .text {
+  font-size: .75rem;
+  color: #6c757d;
+  text-align: justify;
+}
+
+.intro-section .sub-text1-wrap {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .intro-section .sub-text1-wrap {
+    padding-bottom: 0;
+  }
+}
+
+/* index 첫페이지 카드 부분 */
+.card-box {
+  overflow: hidden;
+  margin: 3rem auto;
+}
+
+@media (min-width: 768px) {
+  .card-box {
+    margin: 5rem auto;
+  }
+}
+
+.card-box .card {
+  margin-bottom: .75rem;
+  overflow: hidden;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .card-box .card {
+    background: #fff;
+    background: white;
+  }
+}
+
+.card-box .card .card-body {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.card-box .card .card-body .card-title {
+  font-weight: 700;
+  font-family: "Noto Sans KR",sans-serif;
+  font-size: 1.25rem;
+}
+
+.card-box .card .card-img-top {
+  width: 100%;
+  min-width: 133px;
+  height: auto;
+  max-height: auto;
+}
+
+@media (min-width: 992px) {
+  .card-box .card .card-img-top {
+    max-height: 200px;
+  }
+}
+
+.card-box .card img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.card-box .card img:hover {
+  opacity: .5;
+}
+
+/* 고객센터, 공지사항, 온라인문의, 채용정보 */
+.sub-info {
+  overflow: hidden;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sub-info::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+@media (min-width: 768px) {
+  .sub-info {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.sub-info .sub-info-bg {
+  background-image: url(../img/bg_gray.jpg);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  overflow: hidden;
+}
+
+.sub-info .container {
+  visibility: hidden;
+}
+
+.sub-info .card {
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+}
+
+@media (min-width: 992px) {
+  .sub-info .card {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.sub-info .card .card-header {
+  background-color: #fff;
+  border-bottom: none;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+.sub-info .card .card-header i {
+  background-color: #ced4da;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.sub-info .card .card-header a {
+  display: block;
+  font-weight: 600;
+  color: #343a40;
+  margin-top: 1rem;
+}
+
+.sub-info .card .card-body {
+  font-size: .9rem;
+}
+
+.sub-info .card .card-body span.help {
+  font-size: .75rem;
+}
+
+.sub-info .customer-info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sub-info .customer-info li {
+  padding: .25rem 0;
+  font-size: .75rem;
+}
+
+.sub-info .sub-info-container .col-6:nth-child(1) .card {
+  border-right: 1px solid #e9ecef;
+}
+
+.sub-info .sub-info-container .col-6:nth-child(2) .card {
+  border-right: none;
+}
+
+@media (min-width: 992px) {
+  .sub-info .sub-info-container .col-6:nth-child(2) .card {
+    border-right: 1px solid #e9ecef;
+  }
+}
+
+.sub-info .sub-info-container .col-6:nth-child(3) .card {
+  border-right: 1px solid #e9ecef;
+  border-bottom: none;
+}
+
+.sub-info .sub-info-container .col-6:nth-child(4) .card {
+  border-bottom: none;
+}
+
+.sub-info .sub-info-container .col-6:last-child .card {
+  border-right: none;
+}
+
+/* 협력업체 배너 */
+section.banner-wrap {
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  section.banner-wrap {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+section.banner-wrap .banner-swiper-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem 0;
+  visibility: hidden;
+}
+
+section.banner-wrap .banner-swiper-container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+section.banner-wrap .banner-swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.banner-wrap .banner-swiper-container .swiper-button-next, section.banner-wrap .banner-swiper-container .swiper-button-prev {
+  width: 25px;
+  height: 20px;
+  top: 55%;
+}
+
+section.banner-wrap .banner-swiper-container .swiper-pagination {
+  bottom: -5px !important;
+}
+/*# sourceMappingURL=index_1.css.map */

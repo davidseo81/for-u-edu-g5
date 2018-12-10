@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* at_introduce.php
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+.timeline {
+    line-height: 1.4em;list-style: none;margin: 0;padding: 0;
+    width: 100%;
+    h1, h2, h3, h4, h5, h6 {
+        line-height: inherit;
+    }
+}
+
+.timeline-item {
+    padding-left: 40px;position: relative;
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.timeline-info {
+    font-size: 12px;font-weight: 700;letter-spacing: 3px;margin: 0 0 .5em 0;text-transform: uppercase;white-space: nowrap;
+}
+
+.timeline-marker {
+    position: absolute;top: 0;bottom: 0;left: 0;width: 15px;
+    &:before {
+        background: $white;border: 3px solid transparent;border-radius: 100%;content: "";display: block;height: 15px;position: absolute;top: 4px;left: 0;width: 15px;transition: background 0.3s ease-in-out,border 0.3s ease-in-out;
+    }
+    &:after {
+        content: "";width: 3px;background: #CCD5DB;display: block;position: absolute;top: 24px;bottom: 0;left: 6px;
+    }
+    .timeline-item:last-child &:after {
+        content: none;
+    }
+}
+
+.timeline-item:not(.period) .timeline-marker:before {
+    background: transparent;border: 3px solid $gray;
+}
+
+.timeline-content {
+    padding-bottom: 40px;@include clearfix;overflow: hidden;
+    p:last-child {
+        margin-bottom: 0;
+    }
+    h3.timeline-title {
+        font-size: 1.25rem;font-weight: 700;margin-bottom: .5rem;
+    }
+    .tl-icon {
+        float: left;font-size: 6rem;padding: 0 0 .5rem 0;
+    }
+    .tl-icon.right {
+        float: right;
+    }
+    span.date {
+        font-size: .75rem;color: $gray;
+    }
+}
+
+.period {
+    padding: 0;
+    .timeline-info {
+        display: none;
+    }
+    //첫번째는 마커탑을 출력하지 않는다.
+    &:first-child{
+        .timeline-marker{
+            &:before{
+                border-top:none;
+            }
+        }
+    }
+
+    .timeline-marker {
+        &:before {
+            background: transparent;content: "";width: 15px;height: auto;border: none;border-radius: 0;top: 0;bottom: 30px;position: absolute;border-top: 3px solid #CCD5DB;border-bottom: 3px solid #CCD5DB;
+        }
+        &:after {
+            content: "";height: 32px;top: auto;
+        }
+    }
+    .timeline-content {
+        padding: 40px 0 70px;
+    }
+    .timeline-title {
+        margin: 0.25rem;padding: .1rem;font-size: 2rem;font-weight: 700;
+    }
+}
+
+.timeline-split {
+    @media (min-width: 768px) {
+        .timeline {
+            display: table;
+        }
+        .timeline-item {
+            display: table-row;padding: 0;
+        }
+        .timeline-info,
+        .timeline-marker,
+        .timeline-content,
+        .period .timeline-info {
+            display: table-cell;vertical-align: top;
+        }
+        .timeline-marker {
+            position: relative;
+        }
+        .timeline-content {
+            padding-left: 30px;
+        }
+        .timeline-info {
+            padding-right: 30px;
+        }
+        .period .timeline-title {
+            position: relative;left: -45px;
+        }
+    }
+}
+
+.timeline-centered {
+    @extend .timeline-split;
+    @media (min-width: 768px) {
+        &,
+        .timeline-item,
+        .timeline-info,
+        .timeline-marker,
+        .timeline-content {
+            display: block;margin: 0;padding: 0;
+        }
+        .timeline-item {
+            padding-bottom: 4rem;overflow: hidden;
+        }
+        .timeline-marker {
+            position: absolute;left: 50%;margin-left: -7.5px;
+        }
+        .timeline-info,
+        .timeline-content {
+            width: 50%;
+        }
+        > .timeline-item:nth-child(odd) .timeline-info {
+            float: left;text-align: right;padding-right: 30px;
+        }
+        > .timeline-item:nth-child(odd) .timeline-content {
+            float: right;text-align: left;padding-left: 30px;
+        }
+        > .timeline-item:nth-child(even) .timeline-info {
+            float: right;text-align: left;padding-left: 30px;
+        }
+        > .timeline-item:nth-child(even) .timeline-content {
+            float: left;text-align: right;padding-right: 30px;
+        }
+        > .timeline-item.period .timeline-content {
+            float: none;padding: 0;width: 100%;text-align: center;
+        }
+        .timeline-item.period {
+            padding: 50px 0 90px;
+        }
+        .period .timeline-marker:after {
+            height: 30px;bottom: 0;top: auto;
+        }
+        .period .timeline-title {
+            left: auto;
+        }
+    }
+}
+/* 회사연혁 */
+.history-wrap {
+    width: 100%;@include clearfix;padding-top: 3rem;margin-left: auto;margin-right: auto;
+    @include media-breakpoint-up(md) {
+
+    }
+    @include media-breakpoint-up(lg) {
+
+    }
+
+}
+.marker-outline {
+    .timeline-marker {
+        &:before {
+            background: transparent;
+            border-color: $gray;
+        }
+    }
+    .timeline-item:hover .timeline-marker:before {
+        background: $gray;
+    }
+}
+
+.lcard{
+    position: relative; @include clearfix;
+    .lcard-head{
+        float:left; padding-right : .5rem;
+        @include media-breakpoint-up(md){
+            float:right;padding-left : 1rem;padding-right : 0;
+        }
+        .lcard-img{
+            width:80px; height:auto;
+            @include media-breakpoint-up(md){
+                width:100px; height:auto;
+            }
+        }
+    }
+
+    .lcard-body{
+        .timeline-title{
+            color:$gray-700; font-family: "Noto Sans KR",sans-serif; font-size:1.2rem;
+        }
+        p{
+            font-size: .95rem; margin-bottom:.25rem;
+        }
+        .date{
+            font-weight: 600; color:$gray-600;
+        }
+    }
+}
+.timeline{
+    /* 타임라인 왼쪽 */
+    .timeline-item:nth-child(even){
+        @include media-breakpoint-up(md){
+            .lcard-head{
+                float:right;
+            }
+        }
+    }
+    /* 타임라인 오른쪽 */
+    .timeline-item:nth-child(odd){
+        .lcard-head{
+            float:left; padding-right : 1rem; padding-left:0;
+        }
+    }
+}

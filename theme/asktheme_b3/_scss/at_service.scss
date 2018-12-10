@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+* css는 유료테마 ASKTHEME의 일부입니다. 불법복제시 불이익을 받을 수 있습니다.
+* at_introduce.php
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import "functions";
+@import "_variables";
+@import "_old-variables";
+@import "mixins";
+@import "mixins/_ask";
+@import "custom";
+
+/* 사업분야 */
+.service-wrap {
+    width: 100%; @include clearfix; margin-left: auto; margin-right: auto;
+    .service-img{
+        margin-top: 2rem; text-align:center; margin-bottom: 2rem;
+        @include media-breakpoint-up(md){
+            margin-top: 5rem;
+        }
+        img{
+            width:100%; height: auto; margin:0 auto;
+            /*
+            @include media-breakpoint-up(md){
+                width:95%;
+            }
+            @include media-breakpoint-up(lg){
+                width:90%;
+            }
+            @include media-breakpoint-up(lg){
+                width:85%;
+            }*/
+        }
+    }
+    .service-list1{
+        position:relative;
+        .service-item{
+            visibility: hidden;
+        }
+        h2{
+            font-family: 'Noto Sans KR',sans-serif; font-weight: 600; color:$gray-700; font-size: 1rem;
+        }
+        p{
+            font-size: .8rem; color:$gray-600; line-height: 170%; 
+        }
+        .col-sm-12{
+            padding-bottom:1rem;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 100%;
+    }
+
+    .service-list2{
+        .service-list2-parallax{
+            background-image: url(../img/bg_gray.jpg);padding-top: 3rem; padding-bottom : 3rem; overflow: hidden; min-height : 800px;
+            @include media-breakpoint-up(lg){
+                padding-top: 8rem; padding-bottom : 8rem;
+            }
+            .section-header{
+                padding-bottom : 5rem;
+                h2{
+                    color:$gray-100;text-align:center; font-family: "Noto Sans KR",sans-serif; font-weight: 900; font-size: 2rem; padding-bottom: 2rem;
+                }
+                p{
+                    color:$gray-100; font-size: .9rem;
+                }
+            }      
+            .area-card{
+                overflow:hidden; padding-left:0; padding-right:0;
+                .card{
+                    border:none; margin-bottom : 1rem; visibility: hidden;
+                    @include media-breakpoint-up(md){
+                        margin-bottom : 0;
+                    }
+                    .card-img-top{
+                        height: auto; min-height: auto; max-height:261px;
+                        @include media-breakpoint-up(lg){
+                            max-height:auto;
+                        }
+                    }
+                    .card-title{
+                        font-family: "Noto Sans KR",sans-serif; font-weight: 600; font-size: 1.2rem; text-align: center; color:$gray-700;
+                    }
+                    .card-text{
+                        font-size: .85rem; color:$gray-600;
+                    }
+                }
+            }
+        }
+    }
+
+    #at-service-carousel{
+        .carousel-item{
+            overflow: hidden;
+        }
+        .caption{
+            position: absolute;top:0; left:0;width:100%; text-align: center; height: 100%;            
+            .big-title{
+                visibility: hidden; text-align: center; width:100%; display: block; position: relative; 
+                margin-top:2.2rem;
+                @include media-breakpoint-up(sm-s){
+                    margin-top:4rem;
+                }
+                @include media-breakpoint-up(sm-m){
+                    margin-top:4.7rem;
+                }
+                @include media-breakpoint-up(sm-l){
+                    margin-top:5.7rem;
+                }
+                @include media-breakpoint-up(sm){
+                    margin-top:3.2rem;
+                }
+
+                @include media-breakpoint-up(md){
+                    margin-top:7.8rem;
+                }
+                @include media-breakpoint-up(lg){
+                    margin-top:10rem;
+                }
+                h1{
+                    font-family: "Noto Sans KR", sans-serif; font-weight: 900; color:$white;@include text-shadow(1px,1px,2px, rgba(0,0,0,1));
+                    font-size: 1.2rem;
+                    @include media-breakpoint-up(sm-s){
+                        font-size: 1.5rem;
+                    }
+                    @include media-breakpoint-up(sm-m){
+                        font-size: 1.75rem;
+                    }
+                    @include media-breakpoint-up(sm-l){
+                        font-size: 1.75rem;
+                    }
+                    @include media-breakpoint-up(md){
+                        font-size: 2.5rem;
+                    }
+                    @include media-breakpoint-up(lg){
+                        font-size: 3rem;
+                    }
+                }
+
+                p{
+                    font-family: "Noto Sans KR", sans-serif; font-weight: 400;color:$white;@include text-shadow(1px,1px,1px, rgba(0,0,0,1));
+                    font-size: .8rem;
+                    display: none;
+                    @include media-breakpoint-up(sm){
+                        display: block;
+                        font-size: .85rem;
+                    }
+                    @include media-breakpoint-up(md){
+                        display: block;
+                        font-size: .95rem;
+                    }
+                    @include media-breakpoint-up(lg){
+                        display: block;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .fadeInUp{
+                visibility: visible;
+            }
+        }
+
+    }
+    .at-service-card{
+        .flip-cards{
+            text-align: center;
+        }
+        .front-card{
+            background-color:$gray-200;padding:1.2rem;
+        }
+        .reverse-card{
+            background-color:$gray-700;padding:1.2rem; color:$white;
+            .fa{
+                color:$gray-800 !important;
+            }
+            .round-icon-bg{
+                background-color:$white !important;
+            }
+        }
+        .flip-card-header{
+            text-align: center; border-bottom:none;padding:.5rem;
+            .fa{
+                color:$gray-100;
+            }
+            .round-icon-bg{
+                width:66px; height:66px;
+            }
+        }
+        .flip-card-body{
+            font-size: .75rem; padding-top:0; padding:.5rem;
+            .flip-card-title{
+                text-align: center; font-family: "Noto Sans KR",sans-serif; font-weight: 400; font-size: 1rem;
+            }
+        }
+    }
+}
